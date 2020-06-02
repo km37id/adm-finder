@@ -1,9 +1,10 @@
 <?php 
 
 
- set_time_limit(0);
-  error_reporting(0);
-  date_default_timezone_set('Asia/Jakarta');
+ 	set_time_limit(0);
+  	error_reporting(0);
+  	date_default_timezone_set('Asia/Jakarta');
+	system('clear');
 
 
 /* START COLOR */
@@ -33,16 +34,15 @@ $titik = "{$abu2}[{$res}•{$abu2}]{$green2}";
 
 
 $banner = "
-{$putih}[=]{$green2}====={$putih}[ {$red} I  n  d  o  n  e  s  i  a  {$abu2}{$putih}  M  e  r  d  e  k  a {$red} ]{$green2}======{$putih}[=]
-\r{$red}                      
-                 █████╗ ███╗   ██╗████████╗██╗██╗  ██╗     
-                ██╔══██╗████╗  ██║╚══██╔══╝██║╚██╗██╔╝  
-                ███████║██╔██╗ ██║   ██║   ██║ ╚███╔╝   
- {$putih}               ██╔══██║██║╚██╗██║   ██║   ██║ ██╔██╗   
-                ██║  ██║██║ ╚████║   ██║   ██║██╔╝ ██╗  
-                ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝╚═╝  ╚═╝    
-          	 {$purple}[ LINK: https://github.com/km37id/]
-{$putih}[=]{$green2}====={$putih}[ {$red} I  n  d  o  n  e  s  i  a  {$abu2}{$putih}  M  e  r  d  e  k  a {$red} ]{$green2}======{$putih}[=]
+{$putih}\r{$red}               
+              █████╗ ███╗   ██╗████████╗██╗██╗  ██╗     
+             ██╔══██╗████╗  ██║╚══██╔══╝██║╚██╗██╔╝  
+             ███████║██╔██╗ ██║   ██║   ██║ ╚███╔╝   
+ {$putih}            ██╔══██║██║╚██╗██║   ██║   ██║ ██╔██╗   
+             ██║  ██║██║ ╚████║   ██║   ██║██╔╝ ██╗  
+             ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝╚═╝  ╚═╝    
+              {$purple}[ LINK: https://github.com/km37id/]
+{$putih}    {$green2} {$putih}[ {$red} I  n  d  o  n  e  s  i  a  {$abu2}{$putih}  M  e  r  d  e  k  a {$red} ]{$green2}     {$putih}   
 {$putih}\n";
 
 echo $banner;
@@ -95,6 +95,7 @@ echo "{$green2}	Author: {$putih}Kemet_ID\n\n";
 
 $dom = readline(" [ # ] List File: ");
 $file_domain = file_get_contents($dom);
+echo $file_domain;die;
 		mkdir("Result");
 		$dateup = "Result/Result-".date("H-i-s")."_@Antix";
 		$up = fopen($dateup.".txt", 'w+');
