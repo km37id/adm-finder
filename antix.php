@@ -95,7 +95,6 @@ echo "{$green2}	Author: {$putih}Kemet_ID\n\n";
 
 $dom = readline(" [ # ] List File: ");
 $file_domain = file_get_contents($dom);
-echo $file_domain;die;
 		mkdir("Result");
 		$dateup = "Result/Result-".date("H-i-s")."_@Antix";
 		$up = fopen($dateup.".txt", 'w+');
